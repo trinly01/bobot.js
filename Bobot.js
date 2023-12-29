@@ -19,8 +19,12 @@ class GKM extends EventEmitter2 {
     }).bind(this));
   }
   quit() {
+    console.log('removing event listeners...')
     this.removeAllListeners('*');
+    console.log('...Event listeners removed!')
     this.gkm.kill();
+    console.log('bobot exited...')
+    process.exit();
   }
 }
 

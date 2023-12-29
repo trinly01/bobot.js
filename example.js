@@ -115,6 +115,7 @@ function randomMouseMove () {
   }
 }
 
+process.stdin.resume();
 
 module.exports = {
   bobot,
