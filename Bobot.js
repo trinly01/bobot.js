@@ -3,6 +3,7 @@
 const { EventEmitter2 } = require('eventemitter2')
 const path = require('path');
 const { spawn } = require('child_process');
+var robot = require("robotjs");
 
 class GKM extends EventEmitter2 {
   gkm;
@@ -84,5 +85,6 @@ bobot.on('key.*', function (data) {
 
 
 module.exports = {
-  bobot
+  bobot,
+  robot
 }

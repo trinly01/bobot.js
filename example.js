@@ -1,7 +1,5 @@
 
-var robot = require("robotjs");
-
-const { bobot } = require('./Bobot')
+const { bobot, robot } = require('./Bobot')
 
 // console.log(bobot)
 
