@@ -117,6 +117,9 @@ function randomMouseMove () {
 
 process.stdin.resume();
 
+active = true
+start()
+
 module.exports = {
   bobot,
   robot
