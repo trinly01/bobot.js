@@ -69,9 +69,9 @@ const screenMidY = Math.floor(screenSize.height / 2);
 
 // Random arrow key, Page up/down
 function randomDirection () {
+  console.log('arrow navigation...')
   const direction = ["up", "down", "left", "right", "pageup", "pagedown"];
   for (let i=0; i<getRandomInt(5, 30); i++) {
-    console.log('arrow navigation...')
     robot.setKeyboardDelay(getRandomInt(0, 3000));
     robot.keyTap(direction[getRandomInt(0, 5)], getRandomInt(0, 1) ? 'shift' : []);
   }
@@ -80,9 +80,9 @@ function randomDirection () {
 
 
 function randomScroll() {
+  console.log('scrolling...')
   for (let i=0; i<getRandomInt(5, 50); i++) {
     robot.setMouseDelay(getRandomInt(0, 2000));
-    console.log('scrolling...')
     if (getRandomInt(0, 1)) {
       robot.scrollMouse(getRandomInt(-100, 100), 0);
     } else {
