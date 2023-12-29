@@ -2,5 +2,38 @@
   "dependencies": {
     "eventemitter2": "^6.4.9",
     "robotjs": "^0.6.0"
-  }
+  },
+  "name": "bobot",
+  "description": "Node.js global keyboard and mouse hook",
+  "version": "1.0.0",
+  "main": "Bobot.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinly01/bobot.js.git"
+  },
+  "keywords": [
+    "hook",
+    "electron",
+    "nw.js",
+    "listener",
+    "mousemove",
+    "keypress",
+    "keyup",
+    "global",
+    "keypress",
+    "shortcut"
+  ],
+  "author": "Trinmar Boado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinly01/bobot.js/issues"
+  },
+  "homepage": "https://github.com/trinly01/bobot.js#readme"
 }
