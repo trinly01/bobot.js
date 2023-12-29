@@ -9,6 +9,7 @@ class GKM extends EventEmitter2 {
   gkm;
   constructor() {
     super({ wildcard: true });
+    console.log('spawning gkm...')
     this.gkm = spawn('java', ['-jar', path.join('lib/gkm.jar')]);
     this.gkm.stdout.on('data', (function (data) {
       data = data.toString().split(/\r\n|\r|\n/).filter(function (item) { return item; });
@@ -17,6 +18,7 @@ class GKM extends EventEmitter2 {
         this.emit(parts[0], parts.slice(1));
       }
     }).bind(this));
+    console.log('...spawned gkm!')
   }
   quit() {
     console.log('removing event listeners...')
